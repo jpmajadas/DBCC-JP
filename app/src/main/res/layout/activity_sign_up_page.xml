@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".SignUpPage">
+
+
+    <TextView
+        android:id="@+id/titleLabelTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="SignUp"
+        style="@style/TextAppearance.MaterialComponents.Headline4" />
+    <TextView
+        android:id="@+id/titleLabelTv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Create a New Account"
+        android:layout_below="@id/titleLabelTv"
+        style="@style/TextAppearance.AppCompat.Caption"/>
+
+    <TextView
+        android:id="@+id/fillTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleLabelTv2"
+        style="@style/TextAppearance.MaterialComponents.Subtitle2"
+        android:text="Please Fill out the following"
+        android:layout_margin="10dp"/>
+
+
+    <EditText
+        android:id="@+id/firstnameEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fillTv"
+        android:text="First Name"
+        style="@style/TextAppearance.MaterialComponents.Caption"/>
+
+
+    <EditText
+        android:id="@+id/lastnameEt"
+        style="@style/TextAppearance.MaterialComponents.Caption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/firstnameEt"
+        android:text="Last Name" />
+
+    <EditText
+        android:id="@+id/ageEt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lastnameEt"
+        android:text="Age"
+        style="@style/TextAppearance.MaterialComponents.Caption"/>
+
+    <TextView
+        android:id="@+id/gendertv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ageEt"
+        style="@style/TextAppearance.MaterialComponents.Subtitle2"
+        android:text="Gender"/>
+
+    <EditText
+        android:id="@+id/genderEt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gendertv"
+        android:text="Enter Gender"
+        style="@style/TextAppearance.MaterialComponents.Caption"/>
+
+    <EditText
+        android:id="@+id/addressEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/genderEt"
+        android:text="Address"
+        style="@style/TextAppearance.MaterialComponents.Caption"/>
+
+    <EditText
+        android:id="@+id/numberEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addressEt"
+        android:text="Phone Number"
+        style="@style/TextAppearance.MaterialComponents.Caption"/>
+
+    <CheckBox
+        android:id="@+id/asadmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LogIn as Admin"
+        android:layout_below="@+id/numberEt"
+        style="@style/TextAppearance.MaterialComponents.Caption"/>
+
+    <CheckBox
+        android:id="@+id/asuser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LogIn as User"
+        android:layout_below="@+id/asadmin"
+        style="@style/TextAppearance.MaterialComponents.Caption"/>
+
+    <TextView
+        android:id="@+id/emailpasstv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/asuser"
+        style="@style/TextAppearance.MaterialComponents.Subtitle2"
+        android:text="Please Enter your Email and Password"
+        android:layout_margin="10dp"/>
+
+    <!--email-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/emailTil"
+        android:layout_below="@+id/emailpasstv"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@id/emailEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            style="@style/TextAppearance.MaterialComponents.Body1"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--Password-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordTil"
+        app:passwordToggleEnabled="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/emailTil">
+
+        <EditText
+            android:id="@+id/passwordEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="Password"
+            style="@style/TextAppearance.MaterialComponents.Body1"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--signup button-->
+    <Button
+        android:id="@+id/signUpBtn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:layout_below="@+id/passwordTil"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+
+
+
+</RelativeLayout>

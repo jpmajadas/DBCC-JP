@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">TRACE_DBCC</string>
+    <string name="hello">Hello</string>
+    <string name="qrcode">QRcode</string>
+    <string name="notify">Notify</string>
+    <string name="seats">Seats</string>
+    <string name="notes">Notes</string>
+    <string name="notess">Notes</string>
+    <string name="Aboutus">aboutus</string>
+    <string name="profile">Profile</string>
+    <string name="hello_admin">Hello Admin</string>
+    <string name="admin">Hello Admin</string>
+    <string name="notify_user">Notify User</string>
+    <string name="records">Records</string>
+    <string name="prof">profile</string>
+    <string name="note">Notes</string>
+</resources>
